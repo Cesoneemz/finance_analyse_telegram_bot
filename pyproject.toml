@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "fin-analyse-bot"
+version = "1.0.0"
+description = ""
+authors = ["Danila Gusakov <danila.gusakov@yandex.ru>"]
+readme = "README.md"
+packages = [{include = "fin_analyse_bot"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+aiogram = "^3.4.1"
+matplotlib = "^3.8.3"
+asyncpg = "^0.29.0"
+
+
+[tool.poetry.group.dev.dependencies]
+icecream = "^2.1.3"
+python-dotenv = "^1.0.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
